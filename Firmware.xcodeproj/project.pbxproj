@@ -7,15 +7,579 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		6735F2141DBF04F500DF4318 /* TM4C12xxXL */ = {isa = PBXFileReference; lastKnownFileType = folder; name = TM4C12xxXL; path = "../../../../Volumes/Secure HD/RiceCNC.xcworkspace/RiceCNC/TM4C12xxXL"; sourceTree = "<group>"; };
+		6735F2181DBF15F100DF4318 /* Axis.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Axis.cpp; sourceTree = "<group>"; };
+		6735F2191DBF15F100DF4318 /* Axis.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Axis.h; sourceTree = "<group>"; };
+		6735F21A1DBF15F100DF4318 /* Axis_ClosedLoop.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Axis_ClosedLoop.cpp; sourceTree = "<group>"; };
+		6735F21B1DBF15F100DF4318 /* Axis_Interrupt.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Axis_Interrupt.cpp; sourceTree = "<group>"; };
+		6735F21C1DBF15F100DF4318 /* Axis_Limit.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Axis_Limit.cpp; sourceTree = "<group>"; };
+		6735F21D1DBF15F100DF4318 /* Axis_MachinePosition.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Axis_MachinePosition.cpp; sourceTree = "<group>"; };
+		6735F21E1DBF15F100DF4318 /* Axis_ProgramPosition.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Axis_ProgramPosition.cpp; sourceTree = "<group>"; };
+		6735F21F1DBF15F100DF4318 /* Axis_Slave.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Axis_Slave.cpp; sourceTree = "<group>"; };
+		6735F2201DBF15F100DF4318 /* DiscreteAxis.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DiscreteAxis.cpp; sourceTree = "<group>"; };
+		6735F2211DBF15F100DF4318 /* DiscreteAxis.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscreteAxis.h; sourceTree = "<group>"; };
+		6735F2221DBF15F100DF4318 /* Link.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Link.cpp; sourceTree = "<group>"; };
+		6735F2231DBF15F100DF4318 /* Link.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Link.h; sourceTree = "<group>"; };
+		6735F2241DBF15F100DF4318 /* QuadratureAxis.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = QuadratureAxis.cpp; sourceTree = "<group>"; };
+		6735F2251DBF15F100DF4318 /* QuadratureAxis.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuadratureAxis.h; sourceTree = "<group>"; };
+		6735F2261DBF15F100DF4318 /* StepDirectionAxis.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StepDirectionAxis.cpp; sourceTree = "<group>"; };
+		6735F2271DBF15F100DF4318 /* StepDirectionAxis.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StepDirectionAxis.h; sourceTree = "<group>"; };
+		6735F2281DBF15F100DF4318 /* ThreePhaseAxis.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ThreePhaseAxis.cpp; sourceTree = "<group>"; };
+		6735F2291DBF15F100DF4318 /* ThreePhaseAxis.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreePhaseAxis.h; sourceTree = "<group>"; };
+		6735F22A1DBF15F100DF4318 /* TorchHeightControl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TorchHeightControl.cpp; sourceTree = "<group>"; };
+		6735F22B1DBF15F100DF4318 /* TorchHeightControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TorchHeightControl.h; sourceTree = "<group>"; };
+		6735F22D1DBF15F100DF4318 /* ClosedLoopCounter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ClosedLoopCounter.cpp; sourceTree = "<group>"; };
+		6735F22E1DBF15F100DF4318 /* ClosedLoopCounter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClosedLoopCounter.h; sourceTree = "<group>"; };
+		6735F22F1DBF15F100DF4318 /* HallCounter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HallCounter.cpp; sourceTree = "<group>"; };
+		6735F2301DBF15F100DF4318 /* HallCounter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HallCounter.h; sourceTree = "<group>"; };
+		6735F2311DBF15F100DF4318 /* MotorVoltage.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MotorVoltage.cpp; sourceTree = "<group>"; };
+		6735F2321DBF15F100DF4318 /* MotorVoltage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MotorVoltage.h; sourceTree = "<group>"; };
+		6735F2331DBF15F100DF4318 /* QEI4X.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = QEI4X.cpp; sourceTree = "<group>"; };
+		6735F2341DBF15F100DF4318 /* QEI4X.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QEI4X.h; sourceTree = "<group>"; };
+		6735F2351DBF15F100DF4318 /* QuadratureCounter1X.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = QuadratureCounter1X.cpp; sourceTree = "<group>"; };
+		6735F2361DBF15F100DF4318 /* QuadratureCounter1X.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuadratureCounter1X.h; sourceTree = "<group>"; };
+		6735F2371DBF15F100DF4318 /* QuadratureCounter4X.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = QuadratureCounter4X.cpp; sourceTree = "<group>"; };
+		6735F2381DBF15F100DF4318 /* QuadratureCounter4X.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuadratureCounter4X.h; sourceTree = "<group>"; };
+		6735F2391DBF15F100DF4318 /* StepCounter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StepCounter.cpp; sourceTree = "<group>"; };
+		6735F23A1DBF15F100DF4318 /* StepCounter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StepCounter.h; sourceTree = "<group>"; };
+		6735F23B1DBF15F100DF4318 /* StepDirectionCounter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StepDirectionCounter.cpp; sourceTree = "<group>"; };
+		6735F23C1DBF15F100DF4318 /* StepDirectionCounter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StepDirectionCounter.h; sourceTree = "<group>"; };
+		6735F23E1DBF15F100DF4318 /* BLDC3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BLDC3.cpp; sourceTree = "<group>"; };
+		6735F23F1DBF15F100DF4318 /* BLDC3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLDC3.h; sourceTree = "<group>"; };
+		6735F2401DBF15F100DF4318 /* BLDC3_50.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BLDC3_50.cpp; sourceTree = "<group>"; };
+		6735F2411DBF15F100DF4318 /* BLDC3_64.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BLDC3_64.cpp; sourceTree = "<group>"; };
+		6735F2421DBF15F100DF4318 /* BLDC3PFM.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BLDC3PFM.cpp; sourceTree = "<group>"; };
+		6735F2431DBF15F100DF4318 /* BLDC3PFM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLDC3PFM.h; sourceTree = "<group>"; };
+		6735F2441DBF15F100DF4318 /* BLDC3PWM.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BLDC3PWM.cpp; sourceTree = "<group>"; };
+		6735F2451DBF15F100DF4318 /* BLDC3PWM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLDC3PWM.h; sourceTree = "<group>"; };
+		6735F2461DBF15F100DF4318 /* CurrentFeedback.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CurrentFeedback.cpp; sourceTree = "<group>"; };
+		6735F2471DBF15F100DF4318 /* CurrentFeedback.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CurrentFeedback.h; sourceTree = "<group>"; };
+		6735F2481DBF15F100DF4318 /* DRV8305Axis.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DRV8305Axis.cpp; sourceTree = "<group>"; };
+		6735F2491DBF15F100DF4318 /* DRV8305Axis.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DRV8305Axis.h; sourceTree = "<group>"; };
+		6735F24A1DBF15F100DF4318 /* DRV8305Axis_ParameterUpdate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DRV8305Axis_ParameterUpdate.cpp; sourceTree = "<group>"; };
+		6735F24B1DBF15F100DF4318 /* HallFeedback.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HallFeedback.cpp; sourceTree = "<group>"; };
+		6735F24C1DBF15F100DF4318 /* HallFeedback.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HallFeedback.h; sourceTree = "<group>"; };
+		6735F24D1DBF15F100DF4318 /* QuadratureFeedback.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = QuadratureFeedback.cpp; sourceTree = "<group>"; };
+		6735F24E1DBF15F100DF4318 /* QuadratureFeedback.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuadratureFeedback.h; sourceTree = "<group>"; };
+		6735F24F1DBF15F100DF4318 /* VoltageFeedback.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = VoltageFeedback.cpp; sourceTree = "<group>"; };
+		6735F2501DBF15F100DF4318 /* VoltageFeedback.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VoltageFeedback.h; sourceTree = "<group>"; };
+		6735F2521DBF15F100DF4318 /* DRV8711Axis.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DRV8711Axis.cpp; sourceTree = "<group>"; };
+		6735F2531DBF15F100DF4318 /* DRV8711Axis.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DRV8711Axis.h; sourceTree = "<group>"; };
+		6735F2541DBF15F100DF4318 /* DRV8711Axis_ParameterUpdate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DRV8711Axis_ParameterUpdate.cpp; sourceTree = "<group>"; };
+		6735F2561DBF15F100DF4318 /* dSpinAxis.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = dSpinAxis.cpp; sourceTree = "<group>"; };
+		6735F2571DBF15F100DF4318 /* dSpinAxis.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dSpinAxis.h; sourceTree = "<group>"; };
+		6735F2581DBF15F100DF4318 /* DSpinBuffer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DSpinBuffer.cpp; sourceTree = "<group>"; };
+		6735F2591DBF15F100DF4318 /* DSpinBuffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DSpinBuffer.h; sourceTree = "<group>"; };
+		6735F25A1DBF15F100DF4318 /* dSpinDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dSpinDefines.h; sourceTree = "<group>"; };
+		6735F25C1DBF15F100DF4318 /* ADC.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ADC.cpp; sourceTree = "<group>"; };
+		6735F25D1DBF15F100DF4318 /* ADC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADC.h; sourceTree = "<group>"; };
+		6735F25E1DBF15F100DF4318 /* AnalogPin.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AnalogPin.cpp; sourceTree = "<group>"; };
+		6735F25F1DBF15F100DF4318 /* AnalogPin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnalogPin.h; sourceTree = "<group>"; };
+		6735F2601DBF15F100DF4318 /* GPIO.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GPIO.cpp; sourceTree = "<group>"; };
+		6735F2611DBF15F100DF4318 /* GPIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPIO.h; sourceTree = "<group>"; };
+		6735F2621DBF15F100DF4318 /* InputPin.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = InputPin.cpp; sourceTree = "<group>"; };
+		6735F2631DBF15F100DF4318 /* InputPin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputPin.h; sourceTree = "<group>"; };
+		6735F2641DBF15F100DF4318 /* LimitSwitch.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LimitSwitch.cpp; sourceTree = "<group>"; };
+		6735F2651DBF15F100DF4318 /* LimitSwitch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LimitSwitch.h; sourceTree = "<group>"; };
+		6735F2661DBF15F100DF4318 /* OutputPin.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OutputPin.cpp; sourceTree = "<group>"; };
+		6735F2671DBF15F100DF4318 /* OutputPin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OutputPin.h; sourceTree = "<group>"; };
+		6735F2681DBF15F100DF4318 /* PwmOutputPin.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PwmOutputPin.cpp; sourceTree = "<group>"; };
+		6735F2691DBF15F100DF4318 /* PwmOutputPin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PwmOutputPin.h; sourceTree = "<group>"; };
+		6735F26A1DBF15F100DF4318 /* SoftPwmOutputPin.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SoftPwmOutputPin.cpp; sourceTree = "<group>"; };
+		6735F26B1DBF15F100DF4318 /* SoftPwmOutputPin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SoftPwmOutputPin.h; sourceTree = "<group>"; };
+		6735F26D1DBF15F100DF4318 /* Probe.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Probe.cpp; sourceTree = "<group>"; };
+		6735F26E1DBF15F100DF4318 /* Probe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Probe.h; sourceTree = "<group>"; };
+		6735F2701DBF15F100DF4318 /* Machine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Machine.cpp; sourceTree = "<group>"; };
+		6735F2711DBF15F100DF4318 /* Machine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Machine.h; sourceTree = "<group>"; };
+		6735F2721DBF15F100DF4318 /* Machine_Background.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Machine_Background.cpp; sourceTree = "<group>"; };
+		6735F2731DBF15F100DF4318 /* Machine_InterpolationISR.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Machine_InterpolationISR.cpp; sourceTree = "<group>"; };
+		6735F2741DBF15F100DF4318 /* MachineCommands.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MachineCommands.cpp; sourceTree = "<group>"; };
+		6735F2751DBF15F100DF4318 /* MachineCommands.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachineCommands.h; sourceTree = "<group>"; };
+		6735F2761DBF15F100DF4318 /* MachineCommands_Auxiliary.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MachineCommands_Auxiliary.cpp; sourceTree = "<group>"; };
+		6735F2771DBF15F100DF4318 /* MachineCommands_Axis.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MachineCommands_Axis.cpp; sourceTree = "<group>"; };
+		6735F2781DBF15F100DF4318 /* MachineCommands_Feedrate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MachineCommands_Feedrate.cpp; sourceTree = "<group>"; };
+		6735F2791DBF15F100DF4318 /* MachineCommands_Handshake.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MachineCommands_Handshake.cpp; sourceTree = "<group>"; };
+		6735F27A1DBF15F100DF4318 /* MachineCommands_Interpolation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MachineCommands_Interpolation.cpp; sourceTree = "<group>"; };
+		6735F27B1DBF15F100DF4318 /* MachineCommands_Position.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MachineCommands_Position.cpp; sourceTree = "<group>"; };
+		6735F27C1DBF15F100DF4318 /* MachineCommands_Spindle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MachineCommands_Spindle.cpp; sourceTree = "<group>"; };
+		6735F27D1DBF15F100DF4318 /* MachineCommands_Torch.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MachineCommands_Torch.cpp; sourceTree = "<group>"; };
+		6735F27F1DBF15F100DF4318 /* AbortCommand.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AbortCommand.cpp; sourceTree = "<group>"; };
+		6735F2801DBF15F100DF4318 /* AbortCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbortCommand.h; sourceTree = "<group>"; };
+		6735F2811DBF15F100DF4318 /* AdjustAxisPosition.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AdjustAxisPosition.cpp; sourceTree = "<group>"; };
+		6735F2821DBF15F100DF4318 /* AdjustAxisPosition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdjustAxisPosition.h; sourceTree = "<group>"; };
+		6735F2831DBF15F100DF4318 /* AdjustProgramPosition.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AdjustProgramPosition.cpp; sourceTree = "<group>"; };
+		6735F2841DBF15F100DF4318 /* AdjustProgramPosition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdjustProgramPosition.h; sourceTree = "<group>"; };
+		6735F2851DBF15F100DF4318 /* CancelTransforms.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CancelTransforms.cpp; sourceTree = "<group>"; };
+		6735F2861DBF15F100DF4318 /* CancelTransforms.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CancelTransforms.h; sourceTree = "<group>"; };
+		6735F2871DBF15F100DF4318 /* Command.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Command.cpp; sourceTree = "<group>"; };
+		6735F2881DBF15F100DF4318 /* Command.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Command.h; sourceTree = "<group>"; };
+		6735F2891DBF15F100DF4318 /* DoorAjarCommand.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DoorAjarCommand.cpp; sourceTree = "<group>"; };
+		6735F28A1DBF15F100DF4318 /* DoorAjarCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoorAjarCommand.h; sourceTree = "<group>"; };
+		6735F28B1DBF15F100DF4318 /* Dwell.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Dwell.cpp; sourceTree = "<group>"; };
+		6735F28C1DBF15F100DF4318 /* Dwell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dwell.h; sourceTree = "<group>"; };
+		6735F28D1DBF15F100DF4318 /* LimitCommand.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LimitCommand.cpp; sourceTree = "<group>"; };
+		6735F28E1DBF15F100DF4318 /* LimitCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LimitCommand.h; sourceTree = "<group>"; };
+		6735F28F1DBF15F100DF4318 /* LinkAxis.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkAxis.cpp; sourceTree = "<group>"; };
+		6735F2901DBF15F100DF4318 /* LinkAxis.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkAxis.h; sourceTree = "<group>"; };
+		6735F2911DBF15F100DF4318 /* LinkAxisCommand.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkAxisCommand.cpp; sourceTree = "<group>"; };
+		6735F2921DBF15F100DF4318 /* LinkAxisCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkAxisCommand.h; sourceTree = "<group>"; };
+		6735F2931DBF15F100DF4318 /* MachineNotOkCommand.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MachineNotOkCommand.cpp; sourceTree = "<group>"; };
+		6735F2941DBF15F100DF4318 /* MachineNotOkCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachineNotOkCommand.h; sourceTree = "<group>"; };
+		6735F2951DBF15F100DF4318 /* Pause.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Pause.cpp; sourceTree = "<group>"; };
+		6735F2961DBF15F100DF4318 /* Pause.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pause.h; sourceTree = "<group>"; };
+		6735F2971DBF15F100DF4318 /* PlasmaStartStop.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PlasmaStartStop.cpp; sourceTree = "<group>"; };
+		6735F2981DBF15F100DF4318 /* PlasmaStartStop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlasmaStartStop.h; sourceTree = "<group>"; };
+		6735F2991DBF15F100DF4318 /* SetArcVector.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SetArcVector.cpp; sourceTree = "<group>"; };
+		6735F29A1DBF15F100DF4318 /* SetArcVector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetArcVector.h; sourceTree = "<group>"; };
+		6735F29B1DBF15F100DF4318 /* SetCoolant.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SetCoolant.cpp; sourceTree = "<group>"; };
+		6735F29C1DBF15F100DF4318 /* SetCoolant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetCoolant.h; sourceTree = "<group>"; };
+		6735F29D1DBF15F100DF4318 /* SetFeedrate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SetFeedrate.cpp; sourceTree = "<group>"; };
+		6735F29E1DBF15F100DF4318 /* SetFeedrate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetFeedrate.h; sourceTree = "<group>"; };
+		6735F29F1DBF15F100DF4318 /* SetHallSensorPhasing.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SetHallSensorPhasing.cpp; sourceTree = "<group>"; };
+		6735F2A01DBF15F100DF4318 /* SetHallSensorPhasing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetHallSensorPhasing.h; sourceTree = "<group>"; };
+		6735F2A11DBF15F100DF4318 /* SetMaxInterpolationSpeed.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SetMaxInterpolationSpeed.cpp; sourceTree = "<group>"; };
+		6735F2A21DBF15F100DF4318 /* SetMaxInterpolationSpeed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetMaxInterpolationSpeed.h; sourceTree = "<group>"; };
+		6735F2A31DBF15F100DF4318 /* SetRotationalDiameter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SetRotationalDiameter.cpp; sourceTree = "<group>"; };
+		6735F2A41DBF15F100DF4318 /* SetRotationalDiameter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetRotationalDiameter.h; sourceTree = "<group>"; };
+		6735F2A51DBF15F100DF4318 /* SetSpindleDirection.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SetSpindleDirection.cpp; sourceTree = "<group>"; };
+		6735F2A61DBF15F100DF4318 /* SetSpindleDirection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetSpindleDirection.h; sourceTree = "<group>"; };
+		6735F2A71DBF15F100DF4318 /* SetSpindleRun.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SetSpindleRun.cpp; sourceTree = "<group>"; };
+		6735F2A81DBF15F100DF4318 /* SetSpindleRun.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetSpindleRun.h; sourceTree = "<group>"; };
+		6735F2A91DBF15F100DF4318 /* SetSpindleSpeed.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SetSpindleSpeed.cpp; sourceTree = "<group>"; };
+		6735F2AA1DBF15F100DF4318 /* SetSpindleSpeed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetSpindleSpeed.h; sourceTree = "<group>"; };
+		6735F2AB1DBF15F100DF4318 /* StallCommand.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StallCommand.cpp; sourceTree = "<group>"; };
+		6735F2AC1DBF15F100DF4318 /* StallCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StallCommand.h; sourceTree = "<group>"; };
+		6735F2AD1DBF15F100DF4318 /* SynchronizeQuadratureCounter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SynchronizeQuadratureCounter.cpp; sourceTree = "<group>"; };
+		6735F2AE1DBF15F100DF4318 /* SynchronizeQuadratureCounter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SynchronizeQuadratureCounter.h; sourceTree = "<group>"; };
+		6735F2B01DBF15F100DF4318 /* MainCommands.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MainCommands.cpp; sourceTree = "<group>"; };
+		6735F2B11DBF15F100DF4318 /* MainCommands.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainCommands.h; sourceTree = "<group>"; };
+		6735F2B21DBF15F100DF4318 /* MySerial.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MySerial.cpp; sourceTree = "<group>"; };
+		6735F2B31DBF15F100DF4318 /* MySerial.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MySerial.h; sourceTree = "<group>"; };
+		6735F2B41DBF15F100DF4318 /* RiceCNC_Main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RiceCNC_Main.cpp; sourceTree = "<group>"; };
+		6735F2B51DBF15F100DF4318 /* RiceCNC_Main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RiceCNC_Main.h; sourceTree = "<group>"; };
+		6735F2B71DBF15F100DF4318 /* MyEEProm.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MyEEProm.cpp; sourceTree = "<group>"; };
+		6735F2B81DBF15F100DF4318 /* MyEEProm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyEEProm.h; sourceTree = "<group>"; };
+		6735F2B91DBF15F100DF4318 /* MyEthernet.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MyEthernet.cpp; sourceTree = "<group>"; };
+		6735F2BA1DBF15F100DF4318 /* MyEthernet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyEthernet.h; sourceTree = "<group>"; };
+		6735F2BB1DBF15F100DF4318 /* MyEthernetUdp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MyEthernetUdp.cpp; sourceTree = "<group>"; };
+		6735F2BC1DBF15F100DF4318 /* MyEthernetUdp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyEthernetUdp.h; sourceTree = "<group>"; };
+		6735F2BD1DBF15F100DF4318 /* Retransmit.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Retransmit.cpp; sourceTree = "<group>"; };
+		6735F2BE1DBF15F100DF4318 /* Retransmit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Retransmit.h; sourceTree = "<group>"; };
+		6735F2BF1DBF15F100DF4318 /* UDPResequence.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = UDPResequence.cpp; sourceTree = "<group>"; };
+		6735F2C01DBF15F100DF4318 /* UDPResequence.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UDPResequence.h; sourceTree = "<group>"; };
+		6735F2C21DBF15F100DF4318 /* Coolants.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Coolants.cpp; sourceTree = "<group>"; };
+		6735F2C31DBF15F100DF4318 /* Coolants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Coolants.h; sourceTree = "<group>"; };
+		6735F2C41DBF15F100DF4318 /* DoorAjar.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DoorAjar.cpp; sourceTree = "<group>"; };
+		6735F2C51DBF15F100DF4318 /* DoorAjar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoorAjar.h; sourceTree = "<group>"; };
+		6735F2C61DBF15F100DF4318 /* MachineOK.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MachineOK.cpp; sourceTree = "<group>"; };
+		6735F2C71DBF15F100DF4318 /* MachineOK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachineOK.h; sourceTree = "<group>"; };
+		6735F2C81DBF15F100DF4318 /* Spindle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Spindle.cpp; sourceTree = "<group>"; };
+		6735F2C91DBF15F100DF4318 /* Spindle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Spindle.h; sourceTree = "<group>"; };
+		6735F2CB1DBF15F100DF4318 /* PowerStepAxis.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PowerStepAxis.cpp; sourceTree = "<group>"; };
+		6735F2CC1DBF15F100DF4318 /* PowerStepAxis.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PowerStepAxis.h; sourceTree = "<group>"; };
+		6735F2CD1DBF15F100DF4318 /* PowerStepBuffer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PowerStepBuffer.cpp; sourceTree = "<group>"; };
+		6735F2CE1DBF15F100DF4318 /* PowerStepBuffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PowerStepBuffer.h; sourceTree = "<group>"; };
+		6735F2CF1DBF15F100DF4318 /* PowerStepDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PowerStepDefines.h; sourceTree = "<group>"; };
+		6735F2D11DBF15F100DF4318 /* MachineSplineAxis.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MachineSplineAxis.cpp; sourceTree = "<group>"; };
+		6735F2D21DBF15F100DF4318 /* MachineSplineAxis.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachineSplineAxis.h; sourceTree = "<group>"; };
+		6735F2D31DBF15F100DF4318 /* MachineSplineCommand.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MachineSplineCommand.cpp; sourceTree = "<group>"; };
+		6735F2D41DBF15F100DF4318 /* MachineSplineCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MachineSplineCommand.h; sourceTree = "<group>"; };
+		6735F2D51DBF15F100DF4318 /* ProbingSplineCommand.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ProbingSplineCommand.cpp; sourceTree = "<group>"; };
+		6735F2D61DBF15F100DF4318 /* ProbingSplineCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProbingSplineCommand.h; sourceTree = "<group>"; };
+		6735F2D71DBF15F100DF4318 /* SlaveModeCommand.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SlaveModeCommand.cpp; sourceTree = "<group>"; };
+		6735F2D81DBF15F200DF4318 /* SlaveModeCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlaveModeCommand.h; sourceTree = "<group>"; };
+		6735F2D91DBF15F200DF4318 /* SplineAxis.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SplineAxis.cpp; sourceTree = "<group>"; };
+		6735F2DA1DBF15F200DF4318 /* SplineAxis.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplineAxis.h; sourceTree = "<group>"; };
+		6735F2DB1DBF15F200DF4318 /* SplineCommand.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SplineCommand.cpp; sourceTree = "<group>"; };
+		6735F2DC1DBF15F200DF4318 /* SplineCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplineCommand.h; sourceTree = "<group>"; };
+		6735F2DE1DBF15F200DF4318 /* SSI.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SSI.cpp; sourceTree = "<group>"; };
+		6735F2DF1DBF15F200DF4318 /* SSI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSI.h; sourceTree = "<group>"; };
+		6735F2E01DBF15F200DF4318 /* SSI8305.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SSI8305.cpp; sourceTree = "<group>"; };
+		6735F2E11DBF15F200DF4318 /* SSI8305.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSI8305.h; sourceTree = "<group>"; };
+		6735F2E21DBF15F200DF4318 /* SSI8711.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SSI8711.cpp; sourceTree = "<group>"; };
+		6735F2E31DBF15F200DF4318 /* SSI8711.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSI8711.h; sourceTree = "<group>"; };
+		6735F2E41DBF15F200DF4318 /* SsiBuffer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SsiBuffer.cpp; sourceTree = "<group>"; };
+		6735F2E51DBF15F200DF4318 /* SsiBuffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SsiBuffer.h; sourceTree = "<group>"; };
+		6735F2E61DBF15F200DF4318 /* SsiDeviceQueue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SsiDeviceQueue.cpp; sourceTree = "<group>"; };
+		6735F2E71DBF15F200DF4318 /* SsiDeviceQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SsiDeviceQueue.h; sourceTree = "<group>"; };
+		6735F2E81DBF15F200DF4318 /* SSIdSpin.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SSIdSpin.cpp; sourceTree = "<group>"; };
+		6735F2E91DBF15F200DF4318 /* SSIdSpin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSIdSpin.h; sourceTree = "<group>"; };
+		6735F2EA1DBF15F200DF4318 /* SSIpowerStep.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SSIpowerStep.cpp; sourceTree = "<group>"; };
+		6735F2EB1DBF15F200DF4318 /* SSIpowerStep.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSIpowerStep.h; sourceTree = "<group>"; };
+		6735F2ED1DBF15F200DF4318 /* AxisTimer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AxisTimer.cpp; sourceTree = "<group>"; };
+		6735F2EE1DBF15F200DF4318 /* AxisTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxisTimer.h; sourceTree = "<group>"; };
+		6735F2EF1DBF15F200DF4318 /* InterpolationTimer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = InterpolationTimer.cpp; sourceTree = "<group>"; };
+		6735F2F01DBF15F200DF4318 /* InterpolationTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterpolationTimer.h; sourceTree = "<group>"; };
+		6735F2F11DBF15F200DF4318 /* SoftPwmTimer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SoftPwmTimer.cpp; sourceTree = "<group>"; };
+		6735F2F21DBF15F200DF4318 /* SoftPwmTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SoftPwmTimer.h; sourceTree = "<group>"; };
+		6735F2F31DBF15F200DF4318 /* SysTick.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SysTick.cpp; sourceTree = "<group>"; };
+		6735F2F41DBF15F200DF4318 /* SysTick.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SysTick.h; sourceTree = "<group>"; };
+		6735F2F51DBF15F200DF4318 /* ThreePhaseTimer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ThreePhaseTimer.cpp; sourceTree = "<group>"; };
+		6735F2F61DBF15F200DF4318 /* ThreePhaseTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreePhaseTimer.h; sourceTree = "<group>"; };
+		6735F2F71DBF15F200DF4318 /* Timers.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Timers.cpp; sourceTree = "<group>"; };
+		6735F2F81DBF15F200DF4318 /* Timers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Timers.h; sourceTree = "<group>"; };
+		6735F2F91DBF15F200DF4318 /* TM4C12xxXL.ino */ = {isa = PBXFileReference; lastKnownFileType = text; path = TM4C12xxXL.ino; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		6735F2051DBF021900DF4318 = {
 			isa = PBXGroup;
 			children = (
-				6735F2141DBF04F500DF4318 /* TM4C12xxXL */,
+				6735F2151DBF15F100DF4318 /* TM4C12xxXL */,
 			);
+			sourceTree = "<group>";
+		};
+		6735F2151DBF15F100DF4318 /* TM4C12xxXL */ = {
+			isa = PBXGroup;
+			children = (
+				6735F2161DBF15F100DF4318 /* libraries */,
+				6735F2F91DBF15F200DF4318 /* TM4C12xxXL.ino */,
+			);
+			path = TM4C12xxXL;
+			sourceTree = "<group>";
+		};
+		6735F2161DBF15F100DF4318 /* libraries */ = {
+			isa = PBXGroup;
+			children = (
+				6735F2171DBF15F100DF4318 /* Axes */,
+				6735F22C1DBF15F100DF4318 /* ClosedLoop */,
+				6735F23D1DBF15F100DF4318 /* DRV8305 */,
+				6735F2511DBF15F100DF4318 /* DRV8711 */,
+				6735F2551DBF15F100DF4318 /* dSpin */,
+				6735F25B1DBF15F100DF4318 /* GPIO */,
+				6735F26C1DBF15F100DF4318 /* Inputs */,
+				6735F26F1DBF15F100DF4318 /* Machine */,
+				6735F27E1DBF15F100DF4318 /* MachineCodeCommands */,
+				6735F2AF1DBF15F100DF4318 /* MainCommands */,
+				6735F2B61DBF15F100DF4318 /* MyEthernet */,
+				6735F2C11DBF15F100DF4318 /* Outputs */,
+				6735F2CA1DBF15F100DF4318 /* powerStep01 */,
+				6735F2D01DBF15F100DF4318 /* SplineInterpolation */,
+				6735F2DD1DBF15F200DF4318 /* SSI */,
+				6735F2EC1DBF15F200DF4318 /* Timers */,
+			);
+			path = libraries;
+			sourceTree = "<group>";
+		};
+		6735F2171DBF15F100DF4318 /* Axes */ = {
+			isa = PBXGroup;
+			children = (
+				6735F2181DBF15F100DF4318 /* Axis.cpp */,
+				6735F2191DBF15F100DF4318 /* Axis.h */,
+				6735F21A1DBF15F100DF4318 /* Axis_ClosedLoop.cpp */,
+				6735F21B1DBF15F100DF4318 /* Axis_Interrupt.cpp */,
+				6735F21C1DBF15F100DF4318 /* Axis_Limit.cpp */,
+				6735F21D1DBF15F100DF4318 /* Axis_MachinePosition.cpp */,
+				6735F21E1DBF15F100DF4318 /* Axis_ProgramPosition.cpp */,
+				6735F21F1DBF15F100DF4318 /* Axis_Slave.cpp */,
+				6735F2201DBF15F100DF4318 /* DiscreteAxis.cpp */,
+				6735F2211DBF15F100DF4318 /* DiscreteAxis.h */,
+				6735F2221DBF15F100DF4318 /* Link.cpp */,
+				6735F2231DBF15F100DF4318 /* Link.h */,
+				6735F2241DBF15F100DF4318 /* QuadratureAxis.cpp */,
+				6735F2251DBF15F100DF4318 /* QuadratureAxis.h */,
+				6735F2261DBF15F100DF4318 /* StepDirectionAxis.cpp */,
+				6735F2271DBF15F100DF4318 /* StepDirectionAxis.h */,
+				6735F2281DBF15F100DF4318 /* ThreePhaseAxis.cpp */,
+				6735F2291DBF15F100DF4318 /* ThreePhaseAxis.h */,
+				6735F22A1DBF15F100DF4318 /* TorchHeightControl.cpp */,
+				6735F22B1DBF15F100DF4318 /* TorchHeightControl.h */,
+			);
+			path = Axes;
+			sourceTree = "<group>";
+		};
+		6735F22C1DBF15F100DF4318 /* ClosedLoop */ = {
+			isa = PBXGroup;
+			children = (
+				6735F22D1DBF15F100DF4318 /* ClosedLoopCounter.cpp */,
+				6735F22E1DBF15F100DF4318 /* ClosedLoopCounter.h */,
+				6735F22F1DBF15F100DF4318 /* HallCounter.cpp */,
+				6735F2301DBF15F100DF4318 /* HallCounter.h */,
+				6735F2311DBF15F100DF4318 /* MotorVoltage.cpp */,
+				6735F2321DBF15F100DF4318 /* MotorVoltage.h */,
+				6735F2331DBF15F100DF4318 /* QEI4X.cpp */,
+				6735F2341DBF15F100DF4318 /* QEI4X.h */,
+				6735F2351DBF15F100DF4318 /* QuadratureCounter1X.cpp */,
+				6735F2361DBF15F100DF4318 /* QuadratureCounter1X.h */,
+				6735F2371DBF15F100DF4318 /* QuadratureCounter4X.cpp */,
+				6735F2381DBF15F100DF4318 /* QuadratureCounter4X.h */,
+				6735F2391DBF15F100DF4318 /* StepCounter.cpp */,
+				6735F23A1DBF15F100DF4318 /* StepCounter.h */,
+				6735F23B1DBF15F100DF4318 /* StepDirectionCounter.cpp */,
+				6735F23C1DBF15F100DF4318 /* StepDirectionCounter.h */,
+			);
+			path = ClosedLoop;
+			sourceTree = "<group>";
+		};
+		6735F23D1DBF15F100DF4318 /* DRV8305 */ = {
+			isa = PBXGroup;
+			children = (
+				6735F23E1DBF15F100DF4318 /* BLDC3.cpp */,
+				6735F23F1DBF15F100DF4318 /* BLDC3.h */,
+				6735F2401DBF15F100DF4318 /* BLDC3_50.cpp */,
+				6735F2411DBF15F100DF4318 /* BLDC3_64.cpp */,
+				6735F2421DBF15F100DF4318 /* BLDC3PFM.cpp */,
+				6735F2431DBF15F100DF4318 /* BLDC3PFM.h */,
+				6735F2441DBF15F100DF4318 /* BLDC3PWM.cpp */,
+				6735F2451DBF15F100DF4318 /* BLDC3PWM.h */,
+				6735F2461DBF15F100DF4318 /* CurrentFeedback.cpp */,
+				6735F2471DBF15F100DF4318 /* CurrentFeedback.h */,
+				6735F2481DBF15F100DF4318 /* DRV8305Axis.cpp */,
+				6735F2491DBF15F100DF4318 /* DRV8305Axis.h */,
+				6735F24A1DBF15F100DF4318 /* DRV8305Axis_ParameterUpdate.cpp */,
+				6735F24B1DBF15F100DF4318 /* HallFeedback.cpp */,
+				6735F24C1DBF15F100DF4318 /* HallFeedback.h */,
+				6735F24D1DBF15F100DF4318 /* QuadratureFeedback.cpp */,
+				6735F24E1DBF15F100DF4318 /* QuadratureFeedback.h */,
+				6735F24F1DBF15F100DF4318 /* VoltageFeedback.cpp */,
+				6735F2501DBF15F100DF4318 /* VoltageFeedback.h */,
+			);
+			path = DRV8305;
+			sourceTree = "<group>";
+		};
+		6735F2511DBF15F100DF4318 /* DRV8711 */ = {
+			isa = PBXGroup;
+			children = (
+				6735F2521DBF15F100DF4318 /* DRV8711Axis.cpp */,
+				6735F2531DBF15F100DF4318 /* DRV8711Axis.h */,
+				6735F2541DBF15F100DF4318 /* DRV8711Axis_ParameterUpdate.cpp */,
+			);
+			path = DRV8711;
+			sourceTree = "<group>";
+		};
+		6735F2551DBF15F100DF4318 /* dSpin */ = {
+			isa = PBXGroup;
+			children = (
+				6735F2561DBF15F100DF4318 /* dSpinAxis.cpp */,
+				6735F2571DBF15F100DF4318 /* dSpinAxis.h */,
+				6735F2581DBF15F100DF4318 /* DSpinBuffer.cpp */,
+				6735F2591DBF15F100DF4318 /* DSpinBuffer.h */,
+				6735F25A1DBF15F100DF4318 /* dSpinDefines.h */,
+			);
+			path = dSpin;
+			sourceTree = "<group>";
+		};
+		6735F25B1DBF15F100DF4318 /* GPIO */ = {
+			isa = PBXGroup;
+			children = (
+				6735F25C1DBF15F100DF4318 /* ADC.cpp */,
+				6735F25D1DBF15F100DF4318 /* ADC.h */,
+				6735F25E1DBF15F100DF4318 /* AnalogPin.cpp */,
+				6735F25F1DBF15F100DF4318 /* AnalogPin.h */,
+				6735F2601DBF15F100DF4318 /* GPIO.cpp */,
+				6735F2611DBF15F100DF4318 /* GPIO.h */,
+				6735F2621DBF15F100DF4318 /* InputPin.cpp */,
+				6735F2631DBF15F100DF4318 /* InputPin.h */,
+				6735F2641DBF15F100DF4318 /* LimitSwitch.cpp */,
+				6735F2651DBF15F100DF4318 /* LimitSwitch.h */,
+				6735F2661DBF15F100DF4318 /* OutputPin.cpp */,
+				6735F2671DBF15F100DF4318 /* OutputPin.h */,
+				6735F2681DBF15F100DF4318 /* PwmOutputPin.cpp */,
+				6735F2691DBF15F100DF4318 /* PwmOutputPin.h */,
+				6735F26A1DBF15F100DF4318 /* SoftPwmOutputPin.cpp */,
+				6735F26B1DBF15F100DF4318 /* SoftPwmOutputPin.h */,
+			);
+			path = GPIO;
+			sourceTree = "<group>";
+		};
+		6735F26C1DBF15F100DF4318 /* Inputs */ = {
+			isa = PBXGroup;
+			children = (
+				6735F26D1DBF15F100DF4318 /* Probe.cpp */,
+				6735F26E1DBF15F100DF4318 /* Probe.h */,
+			);
+			path = Inputs;
+			sourceTree = "<group>";
+		};
+		6735F26F1DBF15F100DF4318 /* Machine */ = {
+			isa = PBXGroup;
+			children = (
+				6735F2701DBF15F100DF4318 /* Machine.cpp */,
+				6735F2711DBF15F100DF4318 /* Machine.h */,
+				6735F2721DBF15F100DF4318 /* Machine_Background.cpp */,
+				6735F2731DBF15F100DF4318 /* Machine_InterpolationISR.cpp */,
+				6735F2741DBF15F100DF4318 /* MachineCommands.cpp */,
+				6735F2751DBF15F100DF4318 /* MachineCommands.h */,
+				6735F2761DBF15F100DF4318 /* MachineCommands_Auxiliary.cpp */,
+				6735F2771DBF15F100DF4318 /* MachineCommands_Axis.cpp */,
+				6735F2781DBF15F100DF4318 /* MachineCommands_Feedrate.cpp */,
+				6735F2791DBF15F100DF4318 /* MachineCommands_Handshake.cpp */,
+				6735F27A1DBF15F100DF4318 /* MachineCommands_Interpolation.cpp */,
+				6735F27B1DBF15F100DF4318 /* MachineCommands_Position.cpp */,
+				6735F27C1DBF15F100DF4318 /* MachineCommands_Spindle.cpp */,
+				6735F27D1DBF15F100DF4318 /* MachineCommands_Torch.cpp */,
+			);
+			path = Machine;
+			sourceTree = "<group>";
+		};
+		6735F27E1DBF15F100DF4318 /* MachineCodeCommands */ = {
+			isa = PBXGroup;
+			children = (
+				6735F27F1DBF15F100DF4318 /* AbortCommand.cpp */,
+				6735F2801DBF15F100DF4318 /* AbortCommand.h */,
+				6735F2811DBF15F100DF4318 /* AdjustAxisPosition.cpp */,
+				6735F2821DBF15F100DF4318 /* AdjustAxisPosition.h */,
+				6735F2831DBF15F100DF4318 /* AdjustProgramPosition.cpp */,
+				6735F2841DBF15F100DF4318 /* AdjustProgramPosition.h */,
+				6735F2851DBF15F100DF4318 /* CancelTransforms.cpp */,
+				6735F2861DBF15F100DF4318 /* CancelTransforms.h */,
+				6735F2871DBF15F100DF4318 /* Command.cpp */,
+				6735F2881DBF15F100DF4318 /* Command.h */,
+				6735F2891DBF15F100DF4318 /* DoorAjarCommand.cpp */,
+				6735F28A1DBF15F100DF4318 /* DoorAjarCommand.h */,
+				6735F28B1DBF15F100DF4318 /* Dwell.cpp */,
+				6735F28C1DBF15F100DF4318 /* Dwell.h */,
+				6735F28D1DBF15F100DF4318 /* LimitCommand.cpp */,
+				6735F28E1DBF15F100DF4318 /* LimitCommand.h */,
+				6735F28F1DBF15F100DF4318 /* LinkAxis.cpp */,
+				6735F2901DBF15F100DF4318 /* LinkAxis.h */,
+				6735F2911DBF15F100DF4318 /* LinkAxisCommand.cpp */,
+				6735F2921DBF15F100DF4318 /* LinkAxisCommand.h */,
+				6735F2931DBF15F100DF4318 /* MachineNotOkCommand.cpp */,
+				6735F2941DBF15F100DF4318 /* MachineNotOkCommand.h */,
+				6735F2951DBF15F100DF4318 /* Pause.cpp */,
+				6735F2961DBF15F100DF4318 /* Pause.h */,
+				6735F2971DBF15F100DF4318 /* PlasmaStartStop.cpp */,
+				6735F2981DBF15F100DF4318 /* PlasmaStartStop.h */,
+				6735F2991DBF15F100DF4318 /* SetArcVector.cpp */,
+				6735F29A1DBF15F100DF4318 /* SetArcVector.h */,
+				6735F29B1DBF15F100DF4318 /* SetCoolant.cpp */,
+				6735F29C1DBF15F100DF4318 /* SetCoolant.h */,
+				6735F29D1DBF15F100DF4318 /* SetFeedrate.cpp */,
+				6735F29E1DBF15F100DF4318 /* SetFeedrate.h */,
+				6735F29F1DBF15F100DF4318 /* SetHallSensorPhasing.cpp */,
+				6735F2A01DBF15F100DF4318 /* SetHallSensorPhasing.h */,
+				6735F2A11DBF15F100DF4318 /* SetMaxInterpolationSpeed.cpp */,
+				6735F2A21DBF15F100DF4318 /* SetMaxInterpolationSpeed.h */,
+				6735F2A31DBF15F100DF4318 /* SetRotationalDiameter.cpp */,
+				6735F2A41DBF15F100DF4318 /* SetRotationalDiameter.h */,
+				6735F2A51DBF15F100DF4318 /* SetSpindleDirection.cpp */,
+				6735F2A61DBF15F100DF4318 /* SetSpindleDirection.h */,
+				6735F2A71DBF15F100DF4318 /* SetSpindleRun.cpp */,
+				6735F2A81DBF15F100DF4318 /* SetSpindleRun.h */,
+				6735F2A91DBF15F100DF4318 /* SetSpindleSpeed.cpp */,
+				6735F2AA1DBF15F100DF4318 /* SetSpindleSpeed.h */,
+				6735F2AB1DBF15F100DF4318 /* StallCommand.cpp */,
+				6735F2AC1DBF15F100DF4318 /* StallCommand.h */,
+				6735F2AD1DBF15F100DF4318 /* SynchronizeQuadratureCounter.cpp */,
+				6735F2AE1DBF15F100DF4318 /* SynchronizeQuadratureCounter.h */,
+			);
+			path = MachineCodeCommands;
+			sourceTree = "<group>";
+		};
+		6735F2AF1DBF15F100DF4318 /* MainCommands */ = {
+			isa = PBXGroup;
+			children = (
+				6735F2B01DBF15F100DF4318 /* MainCommands.cpp */,
+				6735F2B11DBF15F100DF4318 /* MainCommands.h */,
+				6735F2B21DBF15F100DF4318 /* MySerial.cpp */,
+				6735F2B31DBF15F100DF4318 /* MySerial.h */,
+				6735F2B41DBF15F100DF4318 /* RiceCNC_Main.cpp */,
+				6735F2B51DBF15F100DF4318 /* RiceCNC_Main.h */,
+			);
+			path = MainCommands;
+			sourceTree = "<group>";
+		};
+		6735F2B61DBF15F100DF4318 /* MyEthernet */ = {
+			isa = PBXGroup;
+			children = (
+				6735F2B71DBF15F100DF4318 /* MyEEProm.cpp */,
+				6735F2B81DBF15F100DF4318 /* MyEEProm.h */,
+				6735F2B91DBF15F100DF4318 /* MyEthernet.cpp */,
+				6735F2BA1DBF15F100DF4318 /* MyEthernet.h */,
+				6735F2BB1DBF15F100DF4318 /* MyEthernetUdp.cpp */,
+				6735F2BC1DBF15F100DF4318 /* MyEthernetUdp.h */,
+				6735F2BD1DBF15F100DF4318 /* Retransmit.cpp */,
+				6735F2BE1DBF15F100DF4318 /* Retransmit.h */,
+				6735F2BF1DBF15F100DF4318 /* UDPResequence.cpp */,
+				6735F2C01DBF15F100DF4318 /* UDPResequence.h */,
+			);
+			path = MyEthernet;
+			sourceTree = "<group>";
+		};
+		6735F2C11DBF15F100DF4318 /* Outputs */ = {
+			isa = PBXGroup;
+			children = (
+				6735F2C21DBF15F100DF4318 /* Coolants.cpp */,
+				6735F2C31DBF15F100DF4318 /* Coolants.h */,
+				6735F2C41DBF15F100DF4318 /* DoorAjar.cpp */,
+				6735F2C51DBF15F100DF4318 /* DoorAjar.h */,
+				6735F2C61DBF15F100DF4318 /* MachineOK.cpp */,
+				6735F2C71DBF15F100DF4318 /* MachineOK.h */,
+				6735F2C81DBF15F100DF4318 /* Spindle.cpp */,
+				6735F2C91DBF15F100DF4318 /* Spindle.h */,
+			);
+			path = Outputs;
+			sourceTree = "<group>";
+		};
+		6735F2CA1DBF15F100DF4318 /* powerStep01 */ = {
+			isa = PBXGroup;
+			children = (
+				6735F2CB1DBF15F100DF4318 /* PowerStepAxis.cpp */,
+				6735F2CC1DBF15F100DF4318 /* PowerStepAxis.h */,
+				6735F2CD1DBF15F100DF4318 /* PowerStepBuffer.cpp */,
+				6735F2CE1DBF15F100DF4318 /* PowerStepBuffer.h */,
+				6735F2CF1DBF15F100DF4318 /* PowerStepDefines.h */,
+			);
+			path = powerStep01;
+			sourceTree = "<group>";
+		};
+		6735F2D01DBF15F100DF4318 /* SplineInterpolation */ = {
+			isa = PBXGroup;
+			children = (
+				6735F2D11DBF15F100DF4318 /* MachineSplineAxis.cpp */,
+				6735F2D21DBF15F100DF4318 /* MachineSplineAxis.h */,
+				6735F2D31DBF15F100DF4318 /* MachineSplineCommand.cpp */,
+				6735F2D41DBF15F100DF4318 /* MachineSplineCommand.h */,
+				6735F2D51DBF15F100DF4318 /* ProbingSplineCommand.cpp */,
+				6735F2D61DBF15F100DF4318 /* ProbingSplineCommand.h */,
+				6735F2D71DBF15F100DF4318 /* SlaveModeCommand.cpp */,
+				6735F2D81DBF15F200DF4318 /* SlaveModeCommand.h */,
+				6735F2D91DBF15F200DF4318 /* SplineAxis.cpp */,
+				6735F2DA1DBF15F200DF4318 /* SplineAxis.h */,
+				6735F2DB1DBF15F200DF4318 /* SplineCommand.cpp */,
+				6735F2DC1DBF15F200DF4318 /* SplineCommand.h */,
+			);
+			path = SplineInterpolation;
+			sourceTree = "<group>";
+		};
+		6735F2DD1DBF15F200DF4318 /* SSI */ = {
+			isa = PBXGroup;
+			children = (
+				6735F2DE1DBF15F200DF4318 /* SSI.cpp */,
+				6735F2DF1DBF15F200DF4318 /* SSI.h */,
+				6735F2E01DBF15F200DF4318 /* SSI8305.cpp */,
+				6735F2E11DBF15F200DF4318 /* SSI8305.h */,
+				6735F2E21DBF15F200DF4318 /* SSI8711.cpp */,
+				6735F2E31DBF15F200DF4318 /* SSI8711.h */,
+				6735F2E41DBF15F200DF4318 /* SsiBuffer.cpp */,
+				6735F2E51DBF15F200DF4318 /* SsiBuffer.h */,
+				6735F2E61DBF15F200DF4318 /* SsiDeviceQueue.cpp */,
+				6735F2E71DBF15F200DF4318 /* SsiDeviceQueue.h */,
+				6735F2E81DBF15F200DF4318 /* SSIdSpin.cpp */,
+				6735F2E91DBF15F200DF4318 /* SSIdSpin.h */,
+				6735F2EA1DBF15F200DF4318 /* SSIpowerStep.cpp */,
+				6735F2EB1DBF15F200DF4318 /* SSIpowerStep.h */,
+			);
+			path = SSI;
+			sourceTree = "<group>";
+		};
+		6735F2EC1DBF15F200DF4318 /* Timers */ = {
+			isa = PBXGroup;
+			children = (
+				6735F2ED1DBF15F200DF4318 /* AxisTimer.cpp */,
+				6735F2EE1DBF15F200DF4318 /* AxisTimer.h */,
+				6735F2EF1DBF15F200DF4318 /* InterpolationTimer.cpp */,
+				6735F2F01DBF15F200DF4318 /* InterpolationTimer.h */,
+				6735F2F11DBF15F200DF4318 /* SoftPwmTimer.cpp */,
+				6735F2F21DBF15F200DF4318 /* SoftPwmTimer.h */,
+				6735F2F31DBF15F200DF4318 /* SysTick.cpp */,
+				6735F2F41DBF15F200DF4318 /* SysTick.h */,
+				6735F2F51DBF15F200DF4318 /* ThreePhaseTimer.cpp */,
+				6735F2F61DBF15F200DF4318 /* ThreePhaseTimer.h */,
+				6735F2F71DBF15F200DF4318 /* Timers.cpp */,
+				6735F2F81DBF15F200DF4318 /* Timers.h */,
+			);
+			path = Timers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
